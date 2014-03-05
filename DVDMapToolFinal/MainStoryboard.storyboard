@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JIz-x9-LhR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="StartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Nf2-WV-lHm">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search street" id="3zm-Ns-Wgc">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="2" id="1JC-kK-aWn"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CellIdentifier" id="4HP-ic-RYX" customClass="CustomCell">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="uha-A3-tT6"/>
+                                    <outlet property="delegate" destination="2" id="XVz-Vl-1VX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nf2-WV-lHm" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="IJw-Oh-vEe"/>
+                            <constraint firstItem="Nf2-WV-lHm" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="YIc-eu-aLC"/>
+                            <constraint firstItem="Nf2-WV-lHm" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Z2b-Bq-jj1"/>
+                            <constraint firstItem="Nf2-WV-lHm" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="bxt-mp-IUD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F1K-gM-ynQ"/>
+                    <connections>
+                        <outlet property="searchBar" destination="3zm-Ns-Wgc" id="Pa1-LH-byM"/>
+                        <outlet property="searchDisplayController" destination="OjL-3Y-YXs" id="mCA-qa-rE8"/>
+                        <outlet property="tableOfStreets" destination="Nf2-WV-lHm" id="r6g-NJ-aZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="OjL-3Y-YXs">
+                    <connections>
+                        <outlet property="delegate" destination="2" id="eXS-ND-TJH"/>
+                        <outlet property="searchBar" destination="3zm-Ns-Wgc" id="Ra1-Mq-xnO"/>
+                        <outlet property="searchContentsController" destination="2" id="CsV-FP-je3"/>
+                        <outlet property="searchResultsDataSource" destination="2" id="QoQ-fR-k7r"/>
+                        <outlet property="searchResultsDelegate" destination="2" id="S8m-Li-adV"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-48" y="8"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YjI-2w-wRU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbk-NS-ic1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="JIz-x9-LhR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JIr-PG-BFG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="2PX-c8-vmX"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-541" y="8"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CustomCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblIdOfStreet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblMapIndex" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblStreetName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="StartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showAreaOnMap:"/>
+                <relationship kind="outlet" name="customCell" candidateClass="CustomCell"/>
+                <relationship kind="outlet" name="tableOfStreets" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

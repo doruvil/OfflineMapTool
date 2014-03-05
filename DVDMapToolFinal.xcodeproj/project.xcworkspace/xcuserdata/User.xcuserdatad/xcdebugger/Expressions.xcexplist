@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[AreaOfMapViewController didRotateFromInterfaceOrientation:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "scrollViewBounds">
+            </PersistentString>
+            <PersistentString
+               value = "BViewWidth">
+            </PersistentString>
+            <PersistentString
+               value = "BViewHeight">
+            </PersistentString>
+            <PersistentString
+               value = "scrollViewFrame">
+            </PersistentString>
+            <PersistentString
+               value = "newCenterToSet">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController getNewCenterPointUsingRelativePoint:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.scrollView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController scrollViewDidZoom:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageBounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController viewDidAppear:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollViewFrame">
+            </PersistentString>
+            <PersistentString
+               value = "self.scrollView.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "scrollViewBounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController convertCenterPointToLocationRegardinTheLefUpperCorner:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.scrollView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController convertCenterPointToLocationRegardinTheLefUpperCorner:orientationPortrait:]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "screenRect">
+            </PersistentString>
+            <PersistentString
+               value = "scrollViewBounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[StartViewController tableView:numberOfRowsInSection:]:StartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filteredList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[StartViewController searchThroughData]:StartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filteredList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[StartViewController importDataFromFile]:StartViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[NSBundle mainBundle] resourcePath]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AreaOfMapViewController viewDidLoad]:AreaOfMapViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "screenRect">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

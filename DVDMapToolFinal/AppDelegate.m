@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+//~~~~~~~~~~~~~~~~~~In case of XIBs:~~~~~~~~~~~~~~~~~~
+//#import "StartViewController.h"
+//~~~~~~~~~~~~~~~~~~In case of XIBs:~~~~~~~~~~~~~~~~~~
 
 @implementation AppDelegate
 
@@ -16,10 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    //~~~~~~~~~~~~~~~~~~In case of XIBs:~~~~~~~~~~~~~~~~~~
+    //StartViewController *sc = [StartViewController alloc]init];
+    //[self.window setRootViewController:sc];
+    //~~~~~~~~~~~~~~~~~~In case of XIBs:~~~~~~~~~~~~~~~~~~
+    
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -103,7 +112,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"DVDMapToolFinal.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"store.sqlite"];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

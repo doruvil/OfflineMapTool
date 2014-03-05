@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE12F2CE17883A46004AEC4F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = CE12F2CD17883A46004AEC4F /* map.png */; };
+		CE12F2D117883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE12F2D017883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv */; };
+		CE12F2E0178870BA004AEC4F /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = CE12F2DF178870BA004AEC4F /* Street.m */; };
 		CE5717911785A85100F6C592 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5717901785A85100F6C592 /* UIKit.framework */; };
 		CE5717931785A85100F6C592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5717921785A85100F6C592 /* Foundation.framework */; };
 		CE5717951785A85100F6C592 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5717941785A85100F6C592 /* CoreGraphics.framework */; };
@@ -18,9 +21,21 @@
 		CE5717A71785A85100F6C592 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5717A61785A85100F6C592 /* Default@2x.png */; };
 		CE5717A91785A85100F6C592 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5717A81785A85100F6C592 /* Default-568h@2x.png */; };
 		CE5717AC1785A85100F6C592 /* DVDMapToolFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE5717AA1785A85100F6C592 /* DVDMapToolFinal.xcdatamodeld */; };
+		CE5717B91785A9D100F6C592 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5717B71785A9D100F6C592 /* MainStoryboard.storyboard */; };
+		CE5717C01785AA5700F6C592 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5717BF1785AA5700F6C592 /* StartViewController.m */; };
+		CED1EAFD1787329B00A9A7AF /* MapStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED1EAFC1787329B00A9A7AF /* MapStoryboard_iPhone.storyboard */; };
+		CED1EB01178732C900A9A7AF /* AreaOfMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1EB00178732C900A9A7AF /* AreaOfMapViewController.m */; };
+		CED1EB071787341C00A9A7AF /* 055759_2012-07-20_09-40_.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1EB061787341C00A9A7AF /* 055759_2012-07-20_09-40_.png */; };
+		CED1EB091787349800A9A7AF /* MapStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED1EB081787349800A9A7AF /* MapStoryboard_iPad.storyboard */; };
+		CED1EB2D178750FE00A9A7AF /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1EB2B178750FE00A9A7AF /* CustomCell.m */; };
+		CED1EB2E178750FE00A9A7AF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED1EB2C178750FE00A9A7AF /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE12F2CD17883A46004AEC4F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		CE12F2D017883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "055759_2012-07-20_09-40_.csv"; sourceTree = "<group>"; };
+		CE12F2DE178870BA004AEC4F /* Street.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Street.h; sourceTree = "<group>"; };
+		CE12F2DF178870BA004AEC4F /* Street.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Street.m; sourceTree = "<group>"; };
 		CE57178C1785A85000F6C592 /* DVDMapToolFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDMapToolFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5717901785A85100F6C592 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE5717921785A85100F6C592 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +51,18 @@
 		CE5717A61785A85100F6C592 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CE5717A81785A85100F6C592 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CE5717AB1785A85100F6C592 /* DVDMapToolFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DVDMapToolFinal.xcdatamodel; sourceTree = "<group>"; };
+		CE5717B71785A9D100F6C592 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CE5717BE1785AA5700F6C592 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = ../StartViewController.h; sourceTree = "<group>"; };
+		CE5717BF1785AA5700F6C592 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = ../StartViewController.m; sourceTree = "<group>"; };
+		CE58250517875F6900FE575B /* DVDMapToolFinal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DVDMapToolFinal.entitlements; sourceTree = "<group>"; };
+		CED1EAFC1787329B00A9A7AF /* MapStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CED1EAFF178732C900A9A7AF /* AreaOfMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaOfMapViewController.h; sourceTree = "<group>"; };
+		CED1EB00178732C900A9A7AF /* AreaOfMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaOfMapViewController.m; sourceTree = "<group>"; };
+		CED1EB061787341C00A9A7AF /* 055759_2012-07-20_09-40_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "055759_2012-07-20_09-40_.png"; sourceTree = "<group>"; };
+		CED1EB081787349800A9A7AF /* MapStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CED1EB2A178750FE00A9A7AF /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		CED1EB2B178750FE00A9A7AF /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		CED1EB2C178750FE00A9A7AF /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,9 @@
 		CE5717811785A85000F6C592 = {
 			isa = PBXGroup;
 			children = (
+				CED1EB061787341C00A9A7AF /* 055759_2012-07-20_09-40_.png */,
+				CE12F2CD17883A46004AEC4F /* map.png */,
+				CE12F2D017883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv */,
 				CE5717981785A85100F6C592 /* DVDMapToolFinal */,
 				CE57178F1785A85100F6C592 /* Frameworks */,
 				CE57178D1785A85000F6C592 /* Products */,
@@ -84,9 +114,14 @@
 		CE5717981785A85100F6C592 /* DVDMapToolFinal */ = {
 			isa = PBXGroup;
 			children = (
+				CE58250517875F6900FE575B /* DVDMapToolFinal.entitlements */,
+				CED1EB171787389700A9A7AF /* Custom Cell Class */,
+				CED1EB05178733A000A9A7AF /* Area Of Map View Controller Class */,
+				CED1EB041787339600A9A7AF /* Start View Controller Class */,
+				CED1EB031787338200A9A7AF /* Storyboards */,
+				CED1EB021787337400A9A7AF /* Core Data */,
 				CE5717A11785A85100F6C592 /* AppDelegate.h */,
 				CE5717A21785A85100F6C592 /* AppDelegate.m */,
-				CE5717AA1785A85100F6C592 /* DVDMapToolFinal.xcdatamodeld */,
 				CE5717991785A85100F6C592 /* Supporting Files */,
 			);
 			path = DVDMapToolFinal;
@@ -104,6 +139,54 @@
 				CE5717A81785A85100F6C592 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CED1EB021787337400A9A7AF /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE5717AA1785A85100F6C592 /* DVDMapToolFinal.xcdatamodeld */,
+				CE12F2DE178870BA004AEC4F /* Street.h */,
+				CE12F2DF178870BA004AEC4F /* Street.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CED1EB031787338200A9A7AF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CED1EB081787349800A9A7AF /* MapStoryboard_iPad.storyboard */,
+				CED1EAFC1787329B00A9A7AF /* MapStoryboard_iPhone.storyboard */,
+				CE5717B71785A9D100F6C592 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CED1EB041787339600A9A7AF /* Start View Controller Class */ = {
+			isa = PBXGroup;
+			children = (
+				CE5717BE1785AA5700F6C592 /* StartViewController.h */,
+				CE5717BF1785AA5700F6C592 /* StartViewController.m */,
+			);
+			name = "Start View Controller Class";
+			sourceTree = "<group>";
+		};
+		CED1EB05178733A000A9A7AF /* Area Of Map View Controller Class */ = {
+			isa = PBXGroup;
+			children = (
+				CED1EAFF178732C900A9A7AF /* AreaOfMapViewController.h */,
+				CED1EB00178732C900A9A7AF /* AreaOfMapViewController.m */,
+			);
+			name = "Area Of Map View Controller Class";
+			sourceTree = "<group>";
+		};
+		CED1EB171787389700A9A7AF /* Custom Cell Class */ = {
+			isa = PBXGroup;
+			children = (
+				CED1EB2A178750FE00A9A7AF /* CustomCell.h */,
+				CED1EB2B178750FE00A9A7AF /* CustomCell.m */,
+				CED1EB2C178750FE00A9A7AF /* CustomCell.xib */,
+			);
+			name = "Custom Cell Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +244,13 @@
 				CE5717A51785A85100F6C592 /* Default.png in Resources */,
 				CE5717A71785A85100F6C592 /* Default@2x.png in Resources */,
 				CE5717A91785A85100F6C592 /* Default-568h@2x.png in Resources */,
+				CE5717B91785A9D100F6C592 /* MainStoryboard.storyboard in Resources */,
+				CED1EAFD1787329B00A9A7AF /* MapStoryboard_iPhone.storyboard in Resources */,
+				CED1EB071787341C00A9A7AF /* 055759_2012-07-20_09-40_.png in Resources */,
+				CED1EB091787349800A9A7AF /* MapStoryboard_iPad.storyboard in Resources */,
+				CED1EB2E178750FE00A9A7AF /* CustomCell.xib in Resources */,
+				CE12F2CE17883A46004AEC4F /* map.png in Resources */,
+				CE12F2D117883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +264,10 @@
 				CE57179F1785A85100F6C592 /* main.m in Sources */,
 				CE5717A31785A85100F6C592 /* AppDelegate.m in Sources */,
 				CE5717AC1785A85100F6C592 /* DVDMapToolFinal.xcdatamodeld in Sources */,
+				CE5717C01785AA5700F6C592 /* StartViewController.m in Sources */,
+				CED1EB01178732C900A9A7AF /* AreaOfMapViewController.m in Sources */,
+				CED1EB2D178750FE00A9A7AF /* CustomCell.m in Sources */,
+				CE12F2E0178870BA004AEC4F /* Street.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +340,7 @@
 		CE5717B01785A85100F6C592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DVDMapToolFinal/DVDMapToolFinal.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVDMapToolFinal/DVDMapToolFinal-Prefix.pch";
 				INFOPLIST_FILE = "DVDMapToolFinal/DVDMapToolFinal-Info.plist";
@@ -257,6 +352,7 @@
 		CE5717B11785A85100F6C592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DVDMapToolFinal/DVDMapToolFinal.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVDMapToolFinal/DVDMapToolFinal-Prefix.pch";
 				INFOPLIST_FILE = "DVDMapToolFinal/DVDMapToolFinal-Info.plist";
@@ -284,6 +380,7 @@
 				CE5717B11785A85100F6C592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
