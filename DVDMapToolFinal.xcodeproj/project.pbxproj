@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9921C72B1C8851630062DDFB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9921C7291C8851630062DDFB /* Alamofire.framework */; };
+		9921C72C1C8851630062DDFB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9921C72A1C8851630062DDFB /* SwiftyJSON.framework */; };
 		CE12F2CE17883A46004AEC4F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = CE12F2CD17883A46004AEC4F /* map.png */; };
 		CE12F2D117883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE12F2D017883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv */; };
 		CE12F2E0178870BA004AEC4F /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = CE12F2DF178870BA004AEC4F /* Street.m */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9921C7291C8851630062DDFB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9921C72A1C8851630062DDFB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		CE12F2CD17883A46004AEC4F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		CE12F2D017883BEC004AEC4F /* 055759_2012-07-20_09-40_.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "055759_2012-07-20_09-40_.csv"; sourceTree = "<group>"; };
 		CE12F2DE178870BA004AEC4F /* Street.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Street.h; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9921C72B1C8851630062DDFB /* Alamofire.framework in Frameworks */,
+				9921C72C1C8851630062DDFB /* SwiftyJSON.framework in Frameworks */,
 				CE5717911785A85100F6C592 /* UIKit.framework in Frameworks */,
 				CE5717931785A85100F6C592 /* Foundation.framework in Frameworks */,
 				CE5717951785A85100F6C592 /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +109,8 @@
 		CE57178F1785A85100F6C592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9921C7291C8851630062DDFB /* Alamofire.framework */,
+				9921C72A1C8851630062DDFB /* SwiftyJSON.framework */,
 				CE5717901785A85100F6C592 /* UIKit.framework */,
 				CE5717921785A85100F6C592 /* Foundation.framework */,
 				CE5717941785A85100F6C592 /* CoreGraphics.framework */,
@@ -199,6 +207,7 @@
 				CE5717881785A85000F6C592 /* Sources */,
 				CE5717891785A85000F6C592 /* Frameworks */,
 				CE57178A1785A85000F6C592 /* Resources */,
+				9921C7271C88453B0062DDFB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,6 +264,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9921C7271C88453B0062DDFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage-copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE5717881785A85000F6C592 /* Sources */ = {
@@ -341,6 +368,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DVDMapToolFinal/DVDMapToolFinal.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVDMapToolFinal/DVDMapToolFinal-Prefix.pch";
 				INFOPLIST_FILE = "DVDMapToolFinal/DVDMapToolFinal-Info.plist";
@@ -353,6 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DVDMapToolFinal/DVDMapToolFinal.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVDMapToolFinal/DVDMapToolFinal-Prefix.pch";
 				INFOPLIST_FILE = "DVDMapToolFinal/DVDMapToolFinal-Info.plist";
